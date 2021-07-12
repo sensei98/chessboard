@@ -17,13 +17,13 @@
 
     <script>
         //constant input values
-        const nOfRows = 6
-        const nOfColumns = 8
+        const boardSizeX = 6
+        const boardSizeY = 8
 
         let container = document.getElementById('container')
 
         //FOR ROWS
-        for (var i = 0; i < nOfRows; i++) {
+        for (var i = 0; i < boardSizeX; i++) {
             //creating rows of the chess
             var rows = document.createElement('div')
             //making class chessrow to add css styles
@@ -34,7 +34,7 @@
 
             
             //FOR COLUMNS
-            for (var j = 0; j < nOfColumns; j++) {
+            for (var j = 0; j < boardSizeY; j++) {
                 //creating boxes in the chesspiece
                 var squares = document.createElement('div')
                 //making class boxes to add css styles
