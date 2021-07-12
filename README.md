@@ -1,2 +1,2 @@
 # chessboard
-Internship assignment
+Albelli Internship assignment
