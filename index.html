@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chessboard</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>chessboard</h1>
+    </div>
+
+    <script>
+        //constant input values
+        const nOfRows = 6
+        const nOfColumns = 8
+
+        let container = document.getElementById('container')
+
+        //FOR ROWS
+        for (var i = 0; i < nOfRows; i++) {
+            //creating rows of the chess
+            var rows = document.createElement('div')
+            //making class chessrow to add css styles
+            rows.classList.add('chessrow')
+
+            if (i % 2 == 0)
+            rows.style.flexDirection = 'row-reverse'
+
+            
+            //FOR COLUMNS
+            for (var j = 0; j < nOfColumns; j++) {
+                //creating boxes in the chesspiece
+                var squares = document.createElement('div')
+                //making class boxes to add css styles
+                squares.classList.add('boxes')
+
+                //checks for colors of rows and columns //even //odd
+                if (j % 2 == 0)
+                    squares.style.backgroundColor = '#769656'
+                else
+                    squares.style.backgroundColor = '#eeeed2'
+
+                //adding squares to chess row
+                rows.appendChild(squares)
+            }
+            //adding rows to container
+            container.appendChild(rows)
+        }
+    </script>
+</body>
+
+</html>

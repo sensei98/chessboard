@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#ccc;
+}
+#container{
+    padding: 10px;
+    width:400px;
+    height:auto;
+    display:grid;
+    grid-template-rows: repeat(8, 1fr);
+    margin: auto;
+}
+.chessrow{
+    height: 50px;
+    display:flex;
+}
+.boxes{
+    width:60px;
+    height: 60px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:40px;
+}
